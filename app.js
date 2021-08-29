@@ -31,7 +31,7 @@ const main = async () => {
 
     var base64Data = thumb.replace(/^data:image\/png;base64,/, '');
 
-    fs.writeFile('./out.jpeg', base64Data, 'base64', function (err) {
+    fs.writeFile(`${__dirname}/out.jpeg`, base64Data, 'base64', function (err) {
       if (err) {
         console.log(err);
       } else {
