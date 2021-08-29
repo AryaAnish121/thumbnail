@@ -87,7 +87,6 @@ const updateThumbnail = (auth) => {
       },
       (err, response) => {
         if (err) return reject(err);
-        console.log(response);
         resolve(response.data.items);
       }
     );
