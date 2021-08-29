@@ -74,6 +74,7 @@ const getVideoComment = (auth) => {
 };
 
 const updateThumbnail = (auth) => {
+  console.log(fs.createReadStream(__dirname + '/out.jpeg'));
   const service = google.youtube('v3');
   return new Promise((resolve, reject) => {
     service.thumbnails.set(
